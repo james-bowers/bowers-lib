@@ -1,12 +1,5 @@
 defmodule ExBowers.Plug.ValidatePathIds do
-  import Plug.Conn
-
-  def temp_error_view(conn) do
-    conn
-    |> put_resp_content_type("application/json")
-    |> send_resp(400, ~s({"error": "invalid id"}))
-    |> halt()
-  end
+  alias ExBowers.ErrorView
 
   def init(opts), do: opts
 
@@ -16,7 +9,7 @@ defmodule ExBowers.Plug.ValidatePathIds do
         conn
 
       false ->
-        temp_error_view(conn)
+        ErrorView.render(conn, :invalid_id)
     end
   end
 
