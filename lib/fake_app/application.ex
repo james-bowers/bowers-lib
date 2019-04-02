@@ -6,11 +6,11 @@ defmodule ExBowers.FakeApp.Application do
       Plug.Adapters.Cowboy.child_spec(
         scheme: :http,
         plug: ExBowers.FakeApp.Router,
-        options: [port: 3084, protocol_options: [max_keepalive: 5_000_000]]
+        options: [port: 3080, protocol_options: [max_keepalive: 5_000_000]]
       )
     ]
 
-    opts = [strategy: :one_for_one, name: Me.Router.Supervisor]
+    opts = [strategy: :one_for_one]
     Supervisor.start_link(children, opts)
   end
 end
