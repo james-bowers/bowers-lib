@@ -1,18 +1,4 @@
 defmodule ExBowers do
-  @moduledoc """
-  Documentation for ExBowers.
-  """
-
-  @doc """
-  Hello world.
-
-  ## Examples
-
-      iex> ExBowers.hello()
-      :world
-
-  """
-  def hello do
-    :world
-  end
+  # Module contains basic reusable logic
+  # for a main Bowers application to use
 end
