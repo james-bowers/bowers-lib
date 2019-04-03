@@ -1,10 +1,10 @@
-defmodule ExBowers.TestSupport.HTTP do
+defmodule BowersLib.TestSupport.HTTP do
   def http_helper(router_module) do
     quote do
       use ExUnit.Case
       use Plug.Test
 
-      import ExBowers.TestSupport.HTTP
+      import BowersLib.TestSupport.HTTP
 
       @opts unquote(router_module).init([])
 

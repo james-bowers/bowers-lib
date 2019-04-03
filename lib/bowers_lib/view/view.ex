@@ -1,4 +1,4 @@
-defmodule ExBowers.View do    
+defmodule BowersLib.View do    
   import Plug.Conn
 
   @enforce_keys [:description, :content]

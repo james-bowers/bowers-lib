@@ -10,11 +10,11 @@ use Mix.Config
 
 # You can configure your application as:
 #
-#     config :ex_bowers, key: :value
+#     config :bowers_lib, key: :value
 #
 # and access this configuration in your application as:
 #
-#     Application.get_env(:ex_bowers, :key)
+#     Application.get_env(:bowers_lib, :key)
 #
 # You can also configure a 3rd-party app:
 #

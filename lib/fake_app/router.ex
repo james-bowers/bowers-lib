@@ -1,9 +1,9 @@
-defmodule ExBowers.FakeApp.Router do
+defmodule BowersLib.FakeApp.Router do
   use Plug.Router
   use Plug.Debugger
 
   plug(:match)
-  plug(ExBowers.Plug.ValidatePathIds, ["an_ecto_id"])
+  plug(BowersLib.Plug.ValidatePathIds, ["an_ecto_id"])
   plug(:dispatch)
 
   get "/resource/:an_ecto_id" do

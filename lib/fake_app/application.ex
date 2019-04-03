@@ -1,11 +1,11 @@
-defmodule ExBowers.FakeApp.Application do
+defmodule BowersLib.FakeApp.Application do
   use Application
 
   def start(_type, _args) do
     children = [
       Plug.Adapters.Cowboy.child_spec(
         scheme: :http,
-        plug: ExBowers.FakeApp.Router,
+        plug: BowersLib.FakeApp.Router,
         options: [port: 3080, protocol_options: [max_keepalive: 5_000_000]]
       )
     ]

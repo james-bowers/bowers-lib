@@ -1,4 +1,4 @@
-defmodule ExBowers.ErrorView do
+defmodule BowersLib.ErrorView do
   import Plug.Conn
   
   def render(conn, :invalid_id) do

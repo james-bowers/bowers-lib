@@ -1,5 +1,5 @@
-defmodule ExBowers.Plug.ValidatePathIds do
-  alias ExBowers.ErrorView
+defmodule BowersLib.Plug.ValidatePathIds do
+  alias BowersLib.ErrorView
 
   def init(opts), do: opts
 

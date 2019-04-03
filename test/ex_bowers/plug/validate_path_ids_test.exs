@@ -1,5 +1,5 @@
-defmodule Test.ExBowers.Plug.ValidatePathIds do
-  use ExBowers.TestSupport.HTTP, ExBowers.FakeApp.Router
+defmodule Test.BowersLib.Plug.ValidatePathIds do
+  use BowersLib.TestSupport.HTTP, BowersLib.FakeApp.Router
 
   describe "validates ecto IDs in path" do
     test "allows valid ecto uuid" do

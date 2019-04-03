@@ -1,5 +1,5 @@
-defmodule Test.ExBowers.TestSupport.HTTP do
-  use ExBowers.TestSupport.HTTP, ExBowers.FakeApp.Router
+defmodule Test.BowersLib.TestSupport.HTTP do
+  use BowersLib.TestSupport.HTTP, BowersLib.FakeApp.Router
 
   describe "http test support helper" do
     test "GET method" do

@@ -1,9 +1,9 @@
-defmodule ExBowers.MixProject do
+defmodule BowersLib.MixProject do
   use Mix.Project
 
   def project do
     [
-      app: :ex_bowers,
+      app: :bowers_lib,
       version: "0.1.0",
       elixir: "~> 1.7",
       start_permanent: Mix.env() == :prod,
@@ -15,7 +15,7 @@ defmodule ExBowers.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      mod: {ExBowers.FakeApp.Application, []}
+      mod: {BowersLib.FakeApp.Application, []}
     ]
   end
 

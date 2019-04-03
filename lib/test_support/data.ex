@@ -1,4 +1,4 @@
-defmodule ExBowers.TestSupport.Data do
+defmodule BowersLib.TestSupport.Data do
   def data_helper(repo_module) do
     quote do
       use ExUnit.CaseTemplate
@@ -7,7 +7,7 @@ defmodule ExBowers.TestSupport.Data do
       import Ecto
       import Ecto.Changeset
       import Ecto.Query
-      import ExBowers.TestSupport.Data
+      import BowersLib.TestSupport.Data
       alias unquote(repo_module)
 
       setup tags do
